@@ -1,6 +1,5 @@
 import { createMemoryHistory, createRouter as _createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-import component from '*.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -25,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/site/about',
         name: 'About',
         component: () => import('@/pages/about/About')
+      },
+      {
+        path: '/site/morning',
+        name: 'Morning',
+        component: () => import('@/pages/morning/Morning')
       }
     ]
   }

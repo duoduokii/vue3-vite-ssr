@@ -9,7 +9,6 @@ const Layout = defineComponent({
     const route = useRoute()
     return () => (
       <div class={Style.layout}>
-        {route.name !== 'Land' && <NavBar />}
         <RouterView></RouterView>
       </div>
     )

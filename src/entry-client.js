@@ -1,7 +1,6 @@
-import { createApp } from "./main";
-const { app, router } = createApp();
-import "./assets/style/reset.scss";
+import { createApp } from './main'
+const { app, router } = createApp()
 
 router.isReady().then(() => {
-  app.mount("#app", true);
-});
+  app.mount('#app', true)
+})
